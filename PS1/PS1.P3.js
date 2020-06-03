@@ -44,6 +44,7 @@ const countA = (str) => {
 
 console.log(`originalString: ${str}`);
 console.log(`parsed string: ${functionA(lambda1, str)}`)
+
 let modified = functionA(lambda2, str)
 console.log(`modifiedString: ${modified}`);
 console.log(`numberReplaced: ${countA(modified)}`);

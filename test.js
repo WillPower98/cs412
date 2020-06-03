@@ -48,7 +48,7 @@ describe ('making sure problem 3 works', () => {
 
     it('it should return [‘super’, ‘califrAgilisti’, ‘cexpialido’, ‘cious’] for supercalifragilisticexpialidocious', function() {
         let result = functionA(lambda1, text);
-        expect(result).to.be.equal(['super', 'califragilisti', 'cexpialido', 'cious']);
+        expect(result).to.be.eql(['super','califragilisti','cexpialido','cious']);
     });
 
     it('it should return supercAlifrAgilisticexpiAlidocious for supercalifragilisticexpialidocious', function() {

@@ -1,9 +1,0 @@
-<div name="outerlist">
-    <ul *ngFor="let country of countries">
-        <li (click)="showCaseNums(country.countryName)">{{country.countryName}}</li>
-    </ul>
-  </div>
-  
-  <div name="caseNumbers" *ngIf="selectedCountry">
-    <input name = "caseNums" type="text" value={{selectedCountry.caseNumbers}}>
-  </div>

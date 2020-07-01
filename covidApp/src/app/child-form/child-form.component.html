@@ -1,0 +1,14 @@
+<p>Please search a country by its code. Country codes can be found at https://thevirustracker.com/api#indexpage.</p>
+
+<form>
+    Country: <input id="countryCode" name="countryCode" class="form-control" 
+    [(ngModel)]="countryCodeInput" required minlength="2"  #countryCode="ngModel"> 
+    <button type="submit" (click)="sendCode()">Search</button><br/>
+</form> 
+
+<div *ngIf="countryCode.invalid && (countryCode.dirty || countryCode.touched)"
+    class="alert alert-danger">
+    <div *ngIf="countryCode.errors.minlength">
+    Country Code must be at least 2 characters long.
+    </div>
+</div>
